@@ -88,11 +88,13 @@ hideDetails = (event) => {
     event.stopPropagation();
 }
 
-let tableRows = document.getElementsByTagName("tr");
-for (let j = 0; j < tableRows.length; j++) {
-    tableRows[j].setAttribute("onclick", "showRowDetails(event)");
-}
-let details = document.getElementsByClassName("details");
-for (let j = 0; j < details.length; j++) {
-    details[j].style.width = document.getElementsByClassName("email-address")[0].parentElement.offsetWidth + 4 + "px";
+preloadDocument = () => {
+    let tableRows = document.getElementsByTagName("tr");
+    for (let j = 0; j < tableRows.length; j++) {
+        tableRows[j].setAttribute("onclick", "showRowDetails(event)");
+    }
+    let details = document.getElementsByClassName("details");
+    for (let j = 0; j < details.length; j++) {
+        details[j].style.width = document.getElementsByClassName("email-address")[0].parentElement.offsetWidth + 4 + "px";
+    }
 }
