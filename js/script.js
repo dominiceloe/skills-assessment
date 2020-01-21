@@ -66,24 +66,23 @@ hideDetails = (event) => {
     if (document.getElementsByTagName("select")[0].value == "Email address") {
         let phoneNumbers = document.getElementsByClassName("phone-number");
         let emailAddresses = document.getElementsByClassName("email-address");
-    
+
         for (let i = 0; i < phoneNumbers.length; i++) {
             phoneNumbers[i].style.display = "none";
         }
         for (let i = 0; i < emailAddresses.length; i++) {
             emailAddresses[i].style.display = "inline-block";
         }
-    }
-    else {
+    } else {
         let phoneNumbers = document.getElementsByClassName("phone-number");
         let emailAddresses = document.getElementsByClassName("email-address");
-    
+
         for (let i = 0; i < emailAddresses.length; i++) {
             emailAddresses[i].style.display = "none";
         }
         for (let i = 0; i < phoneNumbers.length; i++) {
             phoneNumbers[i].style.display = "inline-block";
-        }    
+        }
     }
     event.stopPropagation();
 }
