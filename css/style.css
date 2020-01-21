@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+}
+
+.main-section {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-list-main {}
+
+.card {
+    min-width: 350px;
+    max-height: 650px;
+    border-radius: 15px;
+    background-color: #131313e5;
+    color: rgb(213, 209, 209);
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.card h3{
+    margin: 0;
+    color: rgb(228, 224, 224);
+}
+
+.card-header, .card-footer {
+    padding: 20px 30px;
+    vertical-align: middle;
+}
+
+.card-footer {
+    text-align: right;
+}
+
+.card-footer select{
+    border-radius: 4px;
+    background-color: rgb(230, 228, 228);
+    color: black;
+}
+
+.table {
+    width: 100%;
+}
+.table tr{
+    cursor: pointer;
+}
+.table tr td{
+    padding: 10px 20px;
+}
+
+.table-striped tr:nth-child(even) {
+    background-color: #0f0f0ff5;
+}
+
+.table-striped tr:nth-child(odd) {
+    background-color: #1b1b1bf5;
+}
+.table-striped tr:nth-child(even):hover {
+    background-color: #2f2f2f;
+}
+
+.table-striped tr:nth-child(odd):hover {
+    background-color: #2f2f2f;
+}
+.table td:nth-child(even) {
+    border-left: 1px solid #0f0f0fe1;
+    width: 60%;
+}
+.table td:nth-child(odd) {
+    display: flex;
+    justify-content: flex-start;
+}
+.color-dot{
+    width: 8px;
+    height: 8px;
+    border-radius: 5px;
+    margin: auto;
+    margin-left: 15px;
+    margin-right: 25px;
+}
+.email-address, .phone-number{
+    color: rgba(99, 99, 99, 0.972);
+    font-size: 14px;
+}
+.phone-number{
+    display: none;
+}
+.details{
+    padding: 0 25px;
+    flex-direction: column;
+    justify-content: space-around;
+    display: none;
+    position: absolute;
+    height: 125px;
+    z-index: 2;
+    margin-left: -24px;
+    margin-top: -19px;
+    background-color: #4e4d4d;
+    font-size: 14px;
+}
+.bg-green{
+    background-color: rgb(103, 236, 26);
+}
+.bg-red{
+    background-color: red;
+}
+.bg-yellow{
+    background-color: yellow;
+}
+select{
+    padding: 1px 5px;
+}
+.row-overlay{
+    position: absolute;
+    background-color: #000000c7;
+    z-index: 1;
+    margin-left: -22px;
+    margin-top: -10px;
+}
+.open-details{
+    background-color: #4e4d4d !important;
+}
